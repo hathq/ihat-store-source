@@ -1,11 +1,28 @@
-# Read-only owner adaptation
+# @hathq/ihat-store-source
 
-Package: `@hathq/ihat-store-source`, immutable development version **0.10.0**.
+Read a selected HAT catalog source while detecting changes during observation.
 
-`observeCatalog(rpc, {locale})` reads Hatter's selected catalog-source registry, the verified catalog projection, then the registry again. A changed source or registry revision rejects the observation. It does not provision, install or create a parallel trust decision.
+## What you can do
 
-The observation retains source ID, source registry revision, signed catalog digest, logical origin and signing-key identity. Availability and assurance are owner-derived. Publisher identity is not supplied by the current catalog contract; consumers must show unknown, not infer a publisher from a URL.
+- Keep source identity and verified catalog digest together.
+- Reject a changed source or registry revision.
 
-No semantic, control, installation, credential or renderer authority is transferred
-to iHat. Acceptance and remaining work are recorded in
-`docs/architecture/ihat-online-architecture.json` at the Wonderland root.
+## Current scope
+
+Availability and assurance come from the owner. Unknown publisher identity must remain unknown.
+
+Package distribution is not activated by this documentation. Use the checked-in source and the declared dependency versions; published availability must be verified separately.
+
+## Getting started
+
+Use the package manager matching the checked-in lockfile and the Node.js version declared in `package.json` or the development configuration. Run from this repository:
+
+```sh
+pnpm install --frozen-lockfile
+```
+
+## Documentation and source
+
+[Usage guide](docs/getting-started.md)
+
+[Implementation and public interfaces](src) · [Contributing](CONTRIBUTING.md) · [Security reporting](SECURITY.md) · [License](LICENSE) · [Attribution notices](NOTICE)
