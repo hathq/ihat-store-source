@@ -26,3 +26,8 @@ pnpm install --frozen-lockfile
 [Usage guide](docs/getting-started.md)
 
 [Implementation and public interfaces](src) · [Contributing](CONTRIBUTING.md) · [Security reporting](SECURITY.md) · [License](LICENSE) · [Attribution notices](NOTICE)
+
+## Verification
+
+[Runtime regression checks and native CI](docs/quality.md) explain the tested scope
+and link to repository-policy and product-runtime runs.
